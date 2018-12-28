@@ -1,0 +1,14 @@
+//
+//  Localizable.strings
+//  30DaysChallenges
+//
+//  Created by 大塚悠貴 on 2018/12/26.
+//  Copyright © 2018 otsuka. All rights reserved.
+//
+
+// 単位
+"Unit.Year" = "年";
+"Unit.Month" = "月";
+
+// チャレンジ
+"Challenge.Count" = "%d日継続中";
