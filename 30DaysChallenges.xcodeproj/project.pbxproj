@@ -13,7 +13,22 @@
 		8E38707721CF70180062AA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E38707521CF70180062AA67 /* LaunchScreen.storyboard */; };
 		8E38708F21CF82170062AA67 /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E38708E21CF82170062AA67 /* ChallengeCell.swift */; };
 		8E38709421CF87C90062AA67 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E38709321CF87C90062AA67 /* MainViewController.swift */; };
-		8E38709621CF87F30062AA67 /* TodayChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E38709521CF87F30062AA67 /* TodayChallengesViewController.swift */; };
+		8E38709621CF87F30062AA67 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E38709521CF87F30062AA67 /* ChallengesViewController.swift */; };
+		8E38709D21D252D60062AA67 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E38709C21D252D60062AA67 /* Challenge.swift */; };
+		8E3870A721D29BDC0062AA67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E3870A621D29BDC0062AA67 /* Localizable.strings */; };
+		8E3870A921D2A0B50062AA67 /* ChallengeLogObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870A821D2A0B50062AA67 /* ChallengeLogObject.swift */; };
+		8E3870B021D33EAF0062AA67 /* ChallengeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870AF21D33EAF0062AA67 /* ChallengeRepository.swift */; };
+		8E3870B321D3E00F0062AA67 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3870B221D3E00F0062AA67 /* Calendar.storyboard */; };
+		8E3870B521D3E0270062AA67 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870B421D3E0270062AA67 /* CalendarViewController.swift */; };
+		8E3870B921D3E3420062AA67 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870B821D3E3420062AA67 /* CalendarCell.swift */; };
+		8E3870BB21D3E5260062AA67 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870BA21D3E5260062AA67 /* CalendarHeaderView.swift */; };
+		8E3870BD21D3E5920062AA67 /* CalendarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870BC21D3E5910062AA67 /* CalendarSection.swift */; };
+		8E3870BF21D3E5F80062AA67 /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870BE21D3E5F80062AA67 /* CalendarItem.swift */; };
+		8E3870C321D3E77A0062AA67 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870C221D3E77A0062AA67 /* Date.swift */; };
+		8E3870C521D3E7EB0062AA67 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870C421D3E7EB0062AA67 /* CalendarPresenter.swift */; };
+		8E3870C721D3EF9D0062AA67 /* ChallengeLogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870C621D3EF9D0062AA67 /* ChallengeLogRepository.swift */; };
+		8E3870CA21D402870062AA67 /* TextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3870C921D402860062AA67 /* TextFormatter.swift */; };
+		8EEA5D0021D5311100B35A0D /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEA5CFF21D5311100B35A0D /* EmptyView.swift */; };
 		E9FAF73C83AEA1F1EE86EA39 /* Pods_30DaysChallenges.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B2F563211622487C47F2B3 /* Pods_30DaysChallenges.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +44,22 @@
 		8E38707821CF70180062AA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E38708E21CF82170062AA67 /* ChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
 		8E38709321CF87C90062AA67 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		8E38709521CF87F30062AA67 /* TodayChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayChallengesViewController.swift; sourceTree = "<group>"; };
+		8E38709521CF87F30062AA67 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		8E38709C21D252D60062AA67 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		8E3870A621D29BDC0062AA67 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8E3870A821D2A0B50062AA67 /* ChallengeLogObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeLogObject.swift; sourceTree = "<group>"; };
+		8E3870AF21D33EAF0062AA67 /* ChallengeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeRepository.swift; sourceTree = "<group>"; };
+		8E3870B221D3E00F0062AA67 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		8E3870B421D3E0270062AA67 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		8E3870B821D3E3420062AA67 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		8E3870BA21D3E5260062AA67 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		8E3870BC21D3E5910062AA67 /* CalendarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSection.swift; sourceTree = "<group>"; };
+		8E3870BE21D3E5F80062AA67 /* CalendarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
+		8E3870C221D3E77A0062AA67 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		8E3870C421D3E7EB0062AA67 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
+		8E3870C621D3EF9D0062AA67 /* ChallengeLogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeLogRepository.swift; sourceTree = "<group>"; };
+		8E3870C921D402860062AA67 /* TextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormatter.swift; sourceTree = "<group>"; };
+		8EEA5CFF21D5311100B35A0D /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				8E38707E21CF731B0062AA67 /* Presentation */,
-				8E38708121CF73440062AA67 /* Application */,
-				8E38708021CF73310062AA67 /* Domain */,
+				8E3870AC21D33C110062AA67 /* Domain */,
 				8E38708221CF734A0062AA67 /* Infrastructure */,
 				8E38707321CF70180062AA67 /* Assets.xcassets */,
 				8E38707821CF70180062AA67 /* Info.plist */,
+				8E3870A621D29BDC0062AA67 /* Localizable.strings */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -88,27 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				8E38706C21CF70170062AA67 /* AppDelegate.swift */,
+				8E3870C021D3E7530062AA67 /* Utility */,
 				8E38708321CF73C40062AA67 /* Screen */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		8E38708021CF73310062AA67 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				8E38708621CF73F10062AA67 /* Repository */,
-				8E38708521CF73E20062AA67 /* Entity */,
-				8E38708721CF73F80062AA67 /* ValueObject */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		8E38708121CF73440062AA67 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				8E38708421CF73DA0062AA67 /* UseCase */,
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		8E38708221CF734A0062AA67 /* Infrastructure */ = {
@@ -124,41 +137,16 @@
 			children = (
 				8E38708921CF74330062AA67 /* Main */,
 				8E38708C21CF748E0062AA67 /* Launch */,
+				8E3870B621D3E02E0062AA67 /* Calendar */,
 			);
 			path = Screen;
-			sourceTree = "<group>";
-		};
-		8E38708421CF73DA0062AA67 /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCase;
-			sourceTree = "<group>";
-		};
-		8E38708521CF73E20062AA67 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		8E38708621CF73F10062AA67 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		8E38708721CF73F80062AA67 /* ValueObject */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ValueObject;
 			sourceTree = "<group>";
 		};
 		8E38708821CF74150062AA67 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				8E38709C21D252D60062AA67 /* Challenge.swift */,
+				8E3870A821D2A0B50062AA67 /* ChallengeLogObject.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -169,7 +157,6 @@
 				8E38708D21CF81FB0062AA67 /* Component */,
 				8E38707021CF70170062AA67 /* Main.storyboard */,
 				8E38709321CF87C90062AA67 /* MainViewController.swift */,
-				8E38709521CF87F30062AA67 /* TodayChallengesViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -185,9 +172,75 @@
 		8E38708D21CF81FB0062AA67 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				8E38709521CF87F30062AA67 /* ChallengesViewController.swift */,
 				8E38708E21CF82170062AA67 /* ChallengeCell.swift */,
+				8EEA5CFF21D5311100B35A0D /* EmptyView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		8E3870AC21D33C110062AA67 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8E3870B121D33EBC0062AA67 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8E3870B121D33EBC0062AA67 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8E3870AF21D33EAF0062AA67 /* ChallengeRepository.swift */,
+				8E3870C621D3EF9D0062AA67 /* ChallengeLogRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8E3870B621D3E02E0062AA67 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8E3870B721D3E3230062AA67 /* Component */,
+				8E3870B221D3E00F0062AA67 /* Calendar.storyboard */,
+				8E3870B421D3E0270062AA67 /* CalendarViewController.swift */,
+				8E3870BC21D3E5910062AA67 /* CalendarSection.swift */,
+				8E3870BE21D3E5F80062AA67 /* CalendarItem.swift */,
+				8E3870C421D3E7EB0062AA67 /* CalendarPresenter.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		8E3870B721D3E3230062AA67 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				8E3870B821D3E3420062AA67 /* CalendarCell.swift */,
+				8E3870BA21D3E5260062AA67 /* CalendarHeaderView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8E3870C021D3E7530062AA67 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8E3870C821D402700062AA67 /* Helper */,
+				8E3870C121D3E75C0062AA67 /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8E3870C121D3E75C0062AA67 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E3870C221D3E77A0062AA67 /* Date.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8E3870C821D402700062AA67 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8E3870C921D402860062AA67 /* TextFormatter.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		FFCE7A6D2310FC4F3DBC71BB /* Frameworks */ = {
@@ -259,7 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E38707721CF70180062AA67 /* LaunchScreen.storyboard in Resources */,
+				8E3870A721D29BDC0062AA67 /* Localizable.strings in Resources */,
 				8E38707421CF70180062AA67 /* Assets.xcassets in Resources */,
+				8E3870B321D3E00F0062AA67 /* Calendar.storyboard in Resources */,
 				8E38707221CF70170062AA67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,19 +331,23 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-30DaysChallenges/Pods-30DaysChallenges-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -324,10 +383,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E38709621CF87F30062AA67 /* TodayChallengesViewController.swift in Sources */,
+				8E3870B521D3E0270062AA67 /* CalendarViewController.swift in Sources */,
+				8E38709621CF87F30062AA67 /* ChallengesViewController.swift in Sources */,
+				8E3870C721D3EF9D0062AA67 /* ChallengeLogRepository.swift in Sources */,
+				8E3870B021D33EAF0062AA67 /* ChallengeRepository.swift in Sources */,
+				8E3870BB21D3E5260062AA67 /* CalendarHeaderView.swift in Sources */,
 				8E38706D21CF70170062AA67 /* AppDelegate.swift in Sources */,
+				8E3870BD21D3E5920062AA67 /* CalendarSection.swift in Sources */,
+				8EEA5D0021D5311100B35A0D /* EmptyView.swift in Sources */,
+				8E3870CA21D402870062AA67 /* TextFormatter.swift in Sources */,
+				8E3870C521D3E7EB0062AA67 /* CalendarPresenter.swift in Sources */,
+				8E3870B921D3E3420062AA67 /* CalendarCell.swift in Sources */,
 				8E38708F21CF82170062AA67 /* ChallengeCell.swift in Sources */,
+				8E3870A921D2A0B50062AA67 /* ChallengeLogObject.swift in Sources */,
 				8E38709421CF87C90062AA67 /* MainViewController.swift in Sources */,
+				8E3870BF21D3E5F80062AA67 /* CalendarItem.swift in Sources */,
+				8E3870C321D3E77A0062AA67 /* Date.swift in Sources */,
+				8E38709D21D252D60062AA67 /* Challenge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
