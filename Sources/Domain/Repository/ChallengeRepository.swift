@@ -32,9 +32,8 @@ class ChallengeRepository {
     func findTodayChallenges() -> Single<Results<Challenge>> {
         return Single<Results<Challenge>>
             .create(subscribe: { observer in
-                let calendar = Calendar(identifier: .gregorian)
-                let objects = self.realm.objects(Challenge.self).filter("lastDoneDate == nil OR lastDoneDate =< %@",
-                                                                        calendar.startOfDay(for: Date()))
+                let objects = self.realm.objects(Challenge.self).filter("lastDoneDate == nil OR lastDoneDate < %@",
+                                                                        Date().startOfDay)
                     .sorted(byKeyPath: "createdDate")
                 observer(.success(objects))
                 return Disposables.create()
@@ -48,8 +47,11 @@ class ChallengeRepository {
                 do {
                     try self.realm.write {
                         let log = ChallengeLog()
-                        log.date = date
-                        challenge.lastDoneDate = date
+                        log.date = date.startOfDay
+                        if challenge.lastDoneDate == nil || challenge.lastDoneDate! < date.startOfDay {
+                            challenge.lastDoneDate = date.startOfDay
+                        }
+
                         challenge.count += 1
                         challenge.logs.append(log)
                     }

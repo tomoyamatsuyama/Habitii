@@ -23,7 +23,10 @@ final class CalendarViewController: UIViewController {
     }
     private let presenter = CalendarPresenter()
     private let disposeBag = DisposeBag()
-    private let repository = ChallengeRepository()
+    private let repository = (
+        challenge: ChallengeRepository(),
+        challengeLog: ChallengeLogRepository()
+    )
     private struct Constant {
         static let dayPerWeek: Int = 7
         static let headerHight: CGFloat = 35
@@ -39,9 +42,6 @@ final class CalendarViewController: UIViewController {
         super.viewDidLoad()
         setup()
     }
-
-    // MARK: - Action
-    // TODO: - 過去のやった記録をできるようにする
 }
 
 extension CalendarViewController {
@@ -74,12 +74,58 @@ extension CalendarViewController {
         offset.y -= Constant.headerHight
         collectionView.setContentOffset(offset, animated: false)
     }
+
+    private func markAsDone(for date: Date) {
+        repository.challenge.markAsDone(challenge: challenge, for: date)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: {
+                self.presenter.get(challenge: self.challenge)
+                    .observeOn(MainScheduler.instance)
+                    .subscribe(onSuccess: { [weak self] calendarSections in
+                        self?.calendarSections = calendarSections
+                        }, onError: { error in
+                            print(error)
+                    })
+                    .disposed(by: self.disposeBag)
+            })
+            .disposed(by: disposeBag)
+    }
+
+    private func deleteLog(for date: Date) {
+        repository.challengeLog.delete(of: challenge, date: date)
+            .observeOn(MainScheduler.instance)
+            .subscribe(onSuccess: {
+                self.presenter.get(challenge: self.challenge)
+                    .observeOn(MainScheduler.instance)
+                    .subscribe(onSuccess: { [weak self] calendarSections in
+                        self?.calendarSections = calendarSections
+                        }, onError: { error in
+                            print(error)
+                    })
+                    .disposed(by: self.disposeBag)
+            })
+            .disposed(by: disposeBag)
+    }
 }
 
 // MARK: - UICollectionViewDelegate
 
 extension CalendarViewController: UICollectionViewDelegate {
-    // TODO: - やったことにする操作は別ブランチで
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! CalendarCell
+        let offset = calendarSections[indexPath.section].offset
+        let item = calendarSections[indexPath.section].items[indexPath.row - offset]
+
+        if item.date > Date() {
+            return
+        }
+        if cell.isDone {
+            deleteLog(for: item.date)
+        } else {
+            markAsDone(for: item.date)
+        }
+        cell.isDone = !cell.isDone
+    }
 }
 
 // MARK: - UICollectionViewDataSource

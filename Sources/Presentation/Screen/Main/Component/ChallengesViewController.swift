@@ -53,6 +53,10 @@ final class ChallengesViewController: UIViewController {
         setup()
         findTodayChallenges()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 }
 
 extension ChallengesViewController {

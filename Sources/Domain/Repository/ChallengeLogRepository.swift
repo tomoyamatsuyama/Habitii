@@ -27,4 +27,25 @@ class ChallengeLogRepository {
             })
             .subscribeOn(MainScheduler.instance)
     }
+
+    func delete(of challenge: Challenge, date: Date) -> Single<Void> {
+        return Single<Void>
+            .create(subscribe: { observer in
+                let object = challenge.logs.filter("date == %@", date.startOfDay)
+                do {
+                    try self.realm.write {
+                        self.realm.delete(object)
+                        challenge.count -= 1
+                        if date == Date().startOfDay {
+                            challenge.lastDoneDate = nil
+                        }
+                    }
+                    observer(.success(()))
+                } catch let error as NSError {
+                    observer(.error(error))
+                }
+                return Disposables.create()
+            })
+            .subscribeOn(MainScheduler.instance)
+    }
 }
