@@ -119,11 +119,8 @@ extension CalendarViewController: UICollectionViewDelegate {
         if item.date > Date() {
             return
         }
-        if cell.isDone {
-            deleteLog(for: item.date)
-        } else {
-            markAsDone(for: item.date)
-        }
+
+        cell.isDone ? deleteLog(for: item.date) : markAsDone(for: item.date)
         cell.isDone = !cell.isDone
     }
 }
