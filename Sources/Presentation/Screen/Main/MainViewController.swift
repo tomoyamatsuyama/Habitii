@@ -20,10 +20,8 @@ final class MainViewController: UIViewController {
     // MARK: - Action
 
     @IBAction private func didTapAddButton(_ sender: UIButton) {
-        let alert = UIAlertController(title: "New Challenge", message: "新しいことを始めましょう", preferredStyle: .alert)
-
+        let alert = UIAlertController(title: "New Habit", message: "新しいことを始めましょう", preferredStyle: .alert)
         var textField = UITextField()
-
         let createAction = UIAlertAction(title: "頑張る", style: .default) { (action) in
             if textField.text != "" {
                 let challenge = Challenge()
@@ -35,11 +33,12 @@ final class MainViewController: UIViewController {
                     .disposed(by: self.disposeBag)
             }
         }
+        let cancelAction = UIAlertAction(title: "やっぱやめる", style: .cancel, handler: nil)
+
         alert.addTextField { (alertTextField) in
             textField = alertTextField
             textField.placeholder = "筋トレ"
         }
-        let cancelAction = UIAlertAction(title: "やっぱやめる", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         alert.addAction(createAction)
 
