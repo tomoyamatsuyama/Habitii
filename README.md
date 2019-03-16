@@ -1,7 +1,8 @@
 # Habitii | 習慣化アプリ
 | 新規 | 日々の習慣 | カレンダ-機能 |
 |---|---|---|
-|||
+|![Simulator Screen Shot - iPhone X - 2019-03-16 at 18 47 24](https://user-images.githubusercontent.com/22650523/54473580-1b40e500-481d-11e9-9b72-063c3d9e4071.png)|![Simulator Screen Shot - iPhone X - 2019-03-16 at 18 46 57](https://user-images.githubusercontent.com/22650523/54473583-21cf5c80-481d-11e9-87a1-d0d0e3d66db9.png)|![Simulator Screen Shot - iPhone X - 2019-03-16 at 18 47 24](https://user-images.githubusercontent.com/22650523/54473585-2431b680-481d-11e9-9a8e-bc30c2d16753.png)|
+
 
 ## なぜ習慣化アプリ
 - 毎年毎年、今年はこれを続けようと思って続けられない
